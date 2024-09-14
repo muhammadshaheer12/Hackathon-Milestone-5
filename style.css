@@ -1,0 +1,314 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Form Styles */
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* Resume Output Styles */
+#resume-output {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.editable-section {
+  margin-bottom: 20px;
+}
+
+.editable-section h2 {
+  font-size: 1.5em;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.editable-section p,
+.editable-section ul {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+}
+
+.editable-section ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+#profile-pic-output {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.button-group {
+  margin-top: 10px;
+}
+
+button.edit-button,
+button.save-button {
+  background-color: #007bff;
+  margin-right: 5px;
+}
+
+button.save-button.hidden {
+  display: none;
+}
+
+/* Share Link Section */
+#share-link {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#resume-url {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 300px;
+  margin-right: 10px;
+}
+
+#copy-link {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+#copy-link:hover {
+  background-color: #e0a800;
+}
+
+/* Download Button */
+#download-resume {
+  background-color: #007bff;
+  color: #fff;
+  margin-top: 20px;
+}
+
+#download-resume:hover {
+  background-color: #0056b3;
+}
+/* Print Styles for Resume */
+@media print {
+  body {
+    background-color: white;
+    padding: 0;
+  }
+
+  #resume-output {
+    margin: 0;
+    padding: 20px;
+    background-color: white;
+    box-shadow: none;
+    border: none;
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: 1.4em;
+    color: black;
+  }
+
+  p,
+  ul {
+    font-size: 1.2em;
+    color: black;
+  }
+
+  /* Remove edit buttons when printing */
+  .edit-button, .save-button {
+    display: none;
+  }
+
+  #share-link, #download-resume {
+    display: none;
+  }
+
+  /* Profile Picture */
+  #profile-pic-output {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+  }
+}
+.form-group{
+    margin-bottom: 20px;
+}
+#resume-form{
+    background-color: aquamarine;
+}
+
+/* General styling for the resume container */
+#resume-output {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #9ff8e5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+
+/* Personal Info section */
+#personal-info-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#personal-info-section img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+#personal-info-section h2 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+#personal-info-section p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Editable sections for different parts of the resume */
+.editable-section {
+  margin-bottom: 30px;
+}
+
+.editable-section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.editable-section p,
+.editable-section ul {
+  font-size: 1.1rem;
+  color: #555;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* List style for Skills section */
+.editable-section ul {
+  list-style: square;
+  padding-left: 20px;
+}
+
+/* Button group styling */
+.button-group {
+  margin-top: 10px;
+}
+
+.edit-button,
+.save-button,
+.edit-profile-pic-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.edit-button:hover,
+.save-button:hover,
+.edit-profile-pic-button:hover {
+  background-color: #45a049;
+}
+
+.save-button.hidden,
+.edit-button.hidden {
+  display: none;
+}
+
+/* Link and Download buttons */
+#share-link {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#resume-url {
+  font-size: 1rem;
+  width: 60%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#copy-link,
+#download-resume {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#copy-link:hover,
+#download-resume:hover {
+  background-color: #0056b3;
+}
